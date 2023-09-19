@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+.ad-banner{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2px;
+  background-color: yellow;
+  border-width: 1px;
+  padding: 15px;
+  font-family: cursive;
+    
+}
+
+.ad-banner-left {
+  
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-self: left;
+  justify-content: center;
+  align-items: center;
+  color: rgb(192, 173, 0);
+  border-color: rgb(192, 173, 0);
+  border-style: dotted;
+  border-width: 1px;  
+
+}
+
+.ad-banner-center {
+  
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(192, 173, 0);
+  border-color: rgb(192, 173, 0);
+  border-style: dotted;
+  border-width: 1px;
+
+}
+
+
+.ad-banner-right {
+  
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-self: right;
+  justify-content: center;
+  align-items: center;
+  color: rgb(192, 173, 0);
+  border-color: rgb(192, 173, 0);
+  border-style: dotted;
+  border-width: 1px;
+
+}
+
+
+.grid-container-main {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  background-color: black;
+  padding: 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background-color: yellow;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: yellow;
+  color: white;
+  gap: 1px;
+  padding: 0;
+  margin: 0px;
+  text-align: center;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+}
+.header:hover{
+  color: yellow;
+  cursor: pointer;
+  box-shadow: red;
+  background-color: #ff0000;
+  transition: .5s;
+}
+
+.content-menu {
+  background-color: yellow;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+
+}
+
+.menu {
+  background-color: yellow;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-menu{
+  background-color: blue;
+  color: #ff0000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a:hover {
+  color: #ff0000;
+  box-shadow: #fff 5px 5px 10px;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar {
+  background-color: yellow;
+  height: 4px;
+  width: 30px;
+  margin: 3px 0;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(15, 0, 0, 0.8); /* Transparent overlay */
+  color: yellow;
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto; /* Enable scrolling within the menu */
+}
+
+.menu-content {
+  padding: 20px;
+}
+
+.overlay-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.overlay-close:hover {
+  color: #ff0000;
+}
+
+.overlay-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay-menu ul li {
+  margin: 20px 0;
+}
+
+.overlay-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.overlay-menu ul li a:hover {
+  color: #ff0000;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Styles for the menu when it's open */
+.menu-open .menu-toggle {
+  transform: rotate(90deg);
+}
+
+.menu-open .overlay-menu {
+  left: 0;
+}
+
+.footer {
+  background-color: yellow;
+  color: #ff0000;
+  padding: 10px 0;
+  text-align: center;
+}
