@@ -43,9 +43,10 @@ function createGrid() {
 
     const iframe = document.createElement('iframe');
     iframe.src = videoUrls[i] || '#'; // Use the video URL or a placeholder if the URL doesn't exist
-    iframe.width = '250'; // Set the width and height of the embedded video player
-    iframe.height = '200';
-    iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen';
+    iframe.width = '100%'; // Set the width and height of the embedded video player
+    iframe.height = '100%';
+    iframe.position = 'relative';
+    iframe.allow = "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen";
 
     gridItem.appendChild(iframe);
     gridContainer.appendChild(gridItem);
